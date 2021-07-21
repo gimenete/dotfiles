@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+git reset --soft HEAD~2
+git commit --amend -C HEAD # this will automatically pick `commit 1` as the commit name

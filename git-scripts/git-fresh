@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+DEFAULT_BRANCH=$(git default)
+
+git stash save --include-untracked Autostashing
+
+git checkout $DEFAULT_BRANCH
+git pull origin $DEFAULT_BRANCH
+

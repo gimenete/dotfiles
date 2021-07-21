@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+REMOTE=$(git remote | grep $USER || git remote | grep origin)
+
+git tag -d $1
+git push $REMOTE :refs/tags/$1

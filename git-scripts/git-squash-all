@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+DEFAULT_BRANCH=$(git default)
+CURRENT_BRANCH=$(git current)
+
+git reset $(git merge-base $DEFAULT_BRANCH $CURRENT_BRANCH)
+git add -A
+git commit -m "$*"

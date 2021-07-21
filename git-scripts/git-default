@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+HEAD=$(git symbolic-ref refs/remotes/origin/HEAD)
+
+echo $HEAD | sed 's@^refs/remotes/origin/@@'
