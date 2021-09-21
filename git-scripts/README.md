@@ -14,4 +14,4 @@ Example:
 git update
 ```
 
-Commands related to PRs require [hub](https://hub.github.com/) to be installed
+Commands related to PRs require [gh](https://cli.github.com/) to be installed
