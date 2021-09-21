@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+CURRENT_BRANCH=$(git current)
+
+git fresh
+git checkout -b $*
+git merge --squash $CURRENT_BRANCH
