@@ -3,4 +3,4 @@
 set -e
 
 CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-git pull origin $CURRENT_BRANCH
+git pull origin $CURRENT_BRANCH --rebase
