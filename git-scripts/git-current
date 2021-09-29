@@ -2,6 +2,4 @@
 
 set -e
 
-HEAD=$(git symbolic-ref refs/remotes/origin/HEAD)
-
 git rev-parse --abbrev-ref HEAD
