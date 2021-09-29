@@ -5,3 +5,5 @@ git config --global alias.co 'checkout'
 git config --global alias.st 'status'
 git config --global alias.undo 'reset HEAD^'
 git config --global alias.unstage 'reset HEAD --'
+
+git config pull.rebase true
