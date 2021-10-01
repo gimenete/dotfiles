@@ -6,6 +6,6 @@ DEFAULT_BRANCH=$(git default)
 CURRENT_BRANCH=$(git current)
 
 git checkout $DEFAULT_BRANCH
-git pull
+git pullh
 git checkout $CURRENT_BRANCH
-git rebase $DEFAULT_BRANCH
+git merge $DEFAULT_BRANCH
